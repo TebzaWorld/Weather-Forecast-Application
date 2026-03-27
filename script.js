@@ -75,7 +75,7 @@ async function getForecast(city) {
 
         forecastContainer.innerHTML = "";
 
-        // Get one forecast per day (every 8th item)
+        // Get one forecast per day 
         const dailyData = data.list.filter((item, index) => index % 8 === 0);
 
         dailyData.slice(0, 5).forEach(item => {
